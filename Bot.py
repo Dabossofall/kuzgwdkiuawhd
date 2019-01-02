@@ -1,4 +1,4 @@
-# "C:\Users\Damien\Desktop\Desktop\DiscordPython\DJ Bot\Bot.py"
+# "C:\Users\Damien\Desktop\Desktop\DiscordPython\kuzgwdkiuawhd-master\Bot.py"
 import random
 
 import discord
@@ -18,7 +18,7 @@ async def on_message(msg):
 	channel = msg.channel
 	author = msg.author
 	msg = msg.content
-	append = None
+	append = ""
 
 	if msg.startswith(prefix):
 		# say
