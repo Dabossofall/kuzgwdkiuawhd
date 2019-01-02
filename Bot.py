@@ -74,41 +74,41 @@ async def on_message(msg):
 			await channel.send("https://cdn.discordapp.com/attachments/483793701613600809/529828617136373761/566.png")
 		# WhoreCounter
 		elif msg.startswith(prefix + "WhoreCounter"):
-			WhoreNum += 1
+			Counter.WhoreNum += 1
 			pre = "Damien has said Whore"
 			post = "times today."
 
-			if WhoreNum == 1:
+			if Counter.WhoreNum == 1:
 				post = "time today"
 
-			await channel.send(f"{pre} {WhoreNum} {post}")
+			await channel.send(f"{pre} {Counter.WhoreNum} {post}")
 		# IanWillRememberThat
 		elif msg.startswith(prefix + "IanWillRememberThat"):
-			IanRemember += 1
+			Counter.IanRemember += 1
 			IanPicture = "https://cdn.discordapp.com/attachments/483793701613600809/529895156091191314/Ianwillrememberthat.png"
 			IanWillRememberThat = "```Ian will remember that...```"
 
-			await channel.send(f"{IanRemember} {IanWillRememberThat} {IanPicture}")
+			await channel.send(f"{Counter.IanRemember} {IanWillRememberThat} {IanPicture}")
 		# IanThreat
 		elif msg.startswith(prefix + "IanThreat"):
-			Threats.ian += 1
+			Counter.ian += 1
 			PreThreatI = "Damien has threated Ian"
 			PostThreatI = "times today"
 
-			if Threats.ian == 1:
+			if Counter.ian == 1:
 				PostThreatI = "time today"
 
-			await channel.send(f"{PreThreatI} {Threats.ian} {PostThreatI}")
+			await channel.send(f"{PreThreatI} {Counter.ian} {PostThreatI}")
 		# LandonThreat
 		elif msg.startswith(prefix + "LandonThreat"):
-			Threats.landon += 1
+			Counter.landon += 1
 
 			PreThreat = "Damien has threated Landon"
 			PostThreat = "times today"
-			if Threats.landon == 1:
+			if Counter.landon == 1:
 				PostThreat = "time today"
 
-			await channel.send(f"{PreThreat} {Threats.landon} {PostThreat}")
+			await channel.send(f"{PreThreat} {Counter.landon} {PostThreat}")
 
 
 @bot.event
